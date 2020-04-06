@@ -3,9 +3,15 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Provide source radix (base):");
         int sourceRadix = scanner.nextInt();
         scanner.nextLine();
+
+        System.out.println("Provide number to be converted:");
         String numberString = scanner.nextLine();
+
+        System.out.println("Provide target radix (base):");
         int targetRadix = scanner.nextInt();
         long num;
 
@@ -25,3 +31,4 @@ public class Main {
         }
     }
 }
+
